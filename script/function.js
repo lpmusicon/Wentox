@@ -207,7 +207,12 @@ function addImageToAnswer(obj) {
 	}
 	$(document).on('click touchdown', '.addImageToAnswer' , function(el){
 		var input = $(obj).parent().children('input').val();
+		if(el.target.alt) {
+			input += " <img src='" + el.target.alt + "' />";
+		} else {
 			input += " <img src='" + el.target.firstChild.alt + "' />";
+		}
+			
 		$(obj).parent().children('input').val(input);
 		closeNotificationBox();
 	});
