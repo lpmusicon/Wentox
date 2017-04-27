@@ -1,0 +1,48 @@
+<!-- Stworzone przez Grzegorz Mrózek & Rafał Schmidt na potrzeby Zespołu Szkół nr 6 w Jastrzębiu-Zdroju -->
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="language" content="pl" />
+	<title>Wentox - twórz quizy łatwiej</title>
+	<script src="script/jquery.min.js"></script>
+    	<script src="script/jquery-ui.js"></script>
+	<script sync src="script/function.js"></script>
+	<meta name="author" content="Grzegorz Mrózek, Rafał Schmidt" />
+	<meta name="description" content="Wentox - Twórz Quizy Łatwiej!, prosty generator quizów" />
+	<meta name="keywords" content="" />
+	<link href="assets/wentox.css" rel="stylesheet" type="text/css" />
+	<link href="assets/animate.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300' rel='stylesheet' type='text/css' />
+</head>
+<body>
+	<header>
+		<div class="pageWidth">
+			<img src="logo.png" id="wentoxLogo" alt="Wentox, twórz quizy łatwiej" />
+		</div>
+	</header>
+	<article id='downloadGeneratedWentox' class='pageWidth'></article>
+	<article id="wentoxContainer" class="pageWidth">
+		<label
+			id="wentoxNameLabel"
+			for="wentoxNameInput">Nazwa quizu:</label>
+		<input
+			type="text"
+			id="wentoxNameInput"
+			placeholder="np. test z Dziadów" />
+		<p id="wentoxPerQuestionTimeLabel">Czas na pytanie:</p>
+		<span id="wentoxPerQuestionTime">20s</span>
+		<div id="ui-slider"></div>
+		<button type="button" class="addQuestion pageWidth" onClick="addNewImage();">Dodaj zdjęcia</button>
+        <button type="button" class="addQuestion pageWidth" onClick="addNewQuestion();">Dodaj pytanie</button>
+        <button type="button" id="endQuiz" onClick="endWentox();">Zakończ i stwórz quiz</button>
+	</article>
+	<div id="temp">
+
+	</div>
+	<footer class="pageWidth">
+		<p id="copyright">Copyright &copy; 2015 Grzegorz Mrózek, Rafał Schmidt</p>
+	</footer>
+
+</body>
+</html>

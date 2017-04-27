@@ -1,0 +1,441 @@
+@charset "utf-8";
+
+/* CSS Document */
+/* Author: RafalSchmidt.com & Grzegorz Mrózek */
+
+html, head, body, header, footer, nav, article, section, img, a, input, button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	vertical-align: baseline;
+    text-decoration:none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, footer, header, nav, section {	
+	display: block; 
+}
+
+body {
+	background: #fff;
+    line-height: 1;
+	font-family: "Open Sans", "Lato";
+	font-weight: 300;
+}
+
+input {	outline: none; }
+
+.pageWidth {
+	width: 550px;
+	margin: auto; 
+}
+
+header{
+	width: 100%;
+	height: 150px;
+	background: #4D91D0;
+}
+
+header #wentoxLogo{
+	display: block;
+	margin: auto;
+	padding: 20px 0 0;
+}
+
+footer {
+	margin: 15px auto;
+	text-align:center; 
+	font-size: 14px;
+}
+
+#downloadGeneratedWentox{
+	display: none;
+	width: 510px;
+	margin: 20px 0 30px -275px;
+	padding: 40px 20px;
+	position: fixed;
+	top: 180px;
+	left: 50%;
+	z-index: 3;
+	-webkit-box-shadow: 0 0 2000px 2000px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 0 2000px 2000px rgba(0,0,0,0.4);
+	box-shadow: 0 0 2000px 2000px rgba(0,0,0,0.4);
+	background: #4D91D0;
+	color: white;
+	text-align: center;
+	overflow-y: auto;
+}
+
+.addImageToAnswer img {
+	max-height: 100px;
+	width: auto;
+}
+
+#downloadGeneratedWentox div.notification {
+	font-weight: 300;
+	padding: 5px;
+	margin: 5px 5px 15px;
+	font-size: 24px;
+}
+
+#downloadGeneratedWentox a {
+	display: block;
+	padding: 8px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 10px 0 0;
+}
+
+#wentoxNameLabel {
+	display:block;
+	padding: 30px 0 10px;
+	color: #333;
+	font-size: 18px;
+}
+
+#wentoxNameInput { 
+	width: 96%; 
+	width: calc(100% - 20px);
+}
+
+#wentoxNameInput, .questionName, .questionAnswerInput {
+	height: 50px;
+	padding: 0 5px 0 15px;
+	background: #eee;
+	color: #333;
+	font-size: 16px;
+	transition: .3s background;
+}
+
+#wentoxNameInput:focus, #wentoxNameInput:hover, .questionName:focus, 
+.questionName:hover, .questionAnswerInput:hover, .questionAnswerInput:focus  {
+	background: #DFDFDF;
+}
+
+#wentoxPerQuestionTimeLabel {
+	display: inline-block;
+	margin: 10px 10px 10px 0;
+}
+
+#wentoxPerQuestionTime{
+	float: right;
+	padding: 10px 0;
+	color: #333;
+	font-size: 18px;
+}
+
+#wentoxContainer .question{
+	width: 100%;
+	height: auto;
+	margin: 35px 0;
+	background: #4D91D0;
+	transition: all .4s ease-in-out;
+}
+
+#wentoxContainer .question .questionTitleContainer .questionName, .questionAnswerInput{
+	width: 92%;
+	width: calc(100% - 122px);
+	margin: 0 auto 2px;
+}
+
+#wentoxContainer .question .questionTitleContainer .questionCounter{
+	width: 50px;
+	height: 34px;
+	display:inline-block;
+	float: right;
+	padding: 16px 0 0;
+	background: #eee;
+	vertical-align:middle;
+	font-size:18px;
+	text-align:center;
+	color: #333;
+}
+
+.questionType {
+	margin: 16px;	
+}
+
+.questionTypeContainer {
+	width:auto;
+	height:auto;
+	display: inline-block;
+	color:#fff;
+}
+
+.questionTypeContainer div {
+	display: inline-block;
+	padding: 0 4px;
+}
+
+.questionTypeParagraph{
+	display: inline-block;
+	margin: 0;
+	color: #fff;
+	font-size: 20px;
+}
+
+.questionTypeInput {
+	margin: 3px 2px 0 5px;
+}
+
+.questionTypeLabel {
+	display: inline-block;
+	margin: 2px 0 6px;
+	vertical-align:top;
+	color: white;
+	font-size: 14px;
+}
+
+.questionTip{
+	margin: 16px;
+	color: #fff;
+	text-align: left;
+	font-size: 12px;
+	cursor: default;
+}
+.questionAnswersParagraph {
+	margin: 16px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.addImageBtn {
+	float:left !important;
+	background: inherit;
+	margin: 0 2px 0 0;
+	background: #eee !important;
+	color: #000 !important;
+	border-right: 1px solid #aaa;
+}
+
+.addImageBtn:hover { 
+	background:#DFDFDF !important;
+}
+
+.addImageBox {
+	background: #4D91D0;
+	overflow: hidden;
+}
+
+.addImageBox input[type=file] {
+	color: #fff;
+	display: inline-block;
+	margin: 10px 16px 0;
+}
+
+.addImageBox button {
+	background: #444;
+	color: #fff;
+	padding: 10px 16px;
+	float: right;
+	font-size: 16px;
+	font-family: inherit;
+}
+
+.addImageBox img {
+	max-height: 350px; 
+	width: auto; 
+	max-width: 530px; 
+	display:block;
+	margin: 10px auto;
+}
+
+.addImageToAnswer {
+	padding: 0px;
+	background: transparent;
+}
+
+.questionAnswersContainer div button {
+	background: #eee;
+	color: #000;
+}
+
+.questionAnswersContainer div button, .addImageBtn {
+	width: 50px;
+	height: 50px;
+	float:right;
+	margin: 0;
+	vertical-align:middle;
+	font-family: inherit;
+	font-weight: 300;
+	font-size:18px;
+	text-align:center;
+	cursor:pointer;
+	transition: .3s background;
+}
+
+.addAnswer {
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	background: #444;
+	color: #f0f0f0;
+	font-size: 16px;
+	font-family: inherit;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.addQuestion {
+	width:100%;
+	height: 40px;
+	margin: 5px 0 0;
+	background: #4D91D0;
+	color: #fff;
+	font-size: 16px;
+	font-family: inherit;
+	font-weight: 300;
+	text-align: center;
+	cursor: pointer;
+}
+
+#endQuiz {
+	width: 100%;
+	height: 40px;
+	background:#444;
+	margin: 5px 0 0;
+	text-align:center;
+	color:#fff;
+	font-size: 16px;
+	font-family: inherit;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+#endQuiz:hover, .addAnswer:hover { 
+	background: #222; 
+}
+.addQuestion:hover {
+	background: #3374B0;
+}
+
+/* SLIDER */
+.ui-slider {
+	position: relative;
+	text-align: left;
+	width: 100%;
+	margin: 0 auto 10px;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: pointer;
+	background-color: #444;
+	outline: none;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	display: block;
+	background-position: 0 0;
+}
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {	filter: inherit; }
+.ui-slider-horizontal {	height: .8em; }
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.2em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-widget-header {	background: #4D91D0; }
+.ui-widget-header .ui-state-default {
+	border: 1px solid #ccc;
+	background: #f6f6f6;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+.ui-widget-content { background: #eee; }
+
+/* KLASY SELEKTORY JS */
+.trueAnswerButtonClicked {
+	background: rgb(220, 159, 49) !important;
+    color: #FFF !important;
+}
+
+
+/* PROGREESS */
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #fff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
